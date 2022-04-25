@@ -6381,13 +6381,14 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('exit'));
 					toDfS = 1;
 				case 720:
-					var video:MP4Handler = new MP4Handler();
-
-					video.playMP4(Paths.video('zoinks'));
-					video.finishCallback = function()
+					var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+		                        bg.scrollFactor.set();
+		                        bg.cameras = [camHUD];
+		                        add(bg);
+		                        new FlxVideo(Paths.video('zoinks')).finishCallback = function()
 					{
-						endSong();
-					}
+					        endSong();
+			                }
 			}
 			if (cs_time > 220)
 			{
