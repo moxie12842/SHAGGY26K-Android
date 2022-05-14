@@ -143,6 +143,36 @@ class Hitbox extends FlxSpriteGroup
                 hitbox.add(add(K11 = createhitbox(980, "K11"))); 
                 hitbox.add(add(K12 = createhitbox(1078, "K12")));
                 hitbox.add(add(K13 = createhitbox(1176, "K13")));
+           case TWENTYSIX:
+                hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox13k_hint'));
+                frameshb = Paths.getSparrowAtlas('hitbox/hitbox13k');
+                
+                hitbox.add(add(K1 = createhitbox(0, "K1"))); 
+                hitbox.add(add(K2 = createhitbox(49, "K2")));
+                hitbox.add(add(K3 = createhitbox(98, "K3"))); 
+                hitbox.add(add(K4 = createhitbox(147, "K4")));
+                hitbox.add(add(K5 = createhitbox(196, "K5"))); 
+                hitbox.add(add(K6 = createhitbox(245, "K6")));
+                hitbox.add(add(K7 = createhitbox(294, "K7")));
+                hitbox.add(add(K8 = createhitbox(343, "K8")));
+                hitbox.add(add(K9 = createhitbox(392, "K9")));
+                hitbox.add(add(K10 = createhitbox(441, "K10")));
+                hitbox.add(add(K11 = createhitbox(490, "K11"))); 
+                hitbox.add(add(K12 = createhitbox(539, "K12")));
+                hitbox.add(add(K13 = createhitbox(588, "K13"))); 
+                hitbox.add(add(K14 = createhitbox(637, "K14"))); 
+                hitbox.add(add(K15 = createhitbox(686, "K15")));
+                hitbox.add(add(K16 = createhitbox(196, "K16"))); 
+                hitbox.add(add(K17 = createhitbox(294, "K17")));
+                hitbox.add(add(K18 = createhitbox(392, "K18"))); 
+                hitbox.add(add(K19 = createhitbox(490, "K19")));
+                hitbox.add(add(K20 = createhitbox(588, "K20")));
+                hitbox.add(add(K21 = createhitbox(686, "K21")));
+                hitbox.add(add(K22 = createhitbox(784, "K22")));
+                hitbox.add(add(K23 = createhitbox(882, "K23")));
+                hitbox.add(add(K24 = createhitbox(980, "K24"))); 
+                hitbox.add(add(K25 = createhitbox(1078, "K25")));
+                hitbox.add(add(K26 = createhitbox(1176, "K26")));  
             case DEFAULT:
                 hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox_hint'));
                 frameshb = Paths.getSparrowAtlas('hitbox/hitbox');
