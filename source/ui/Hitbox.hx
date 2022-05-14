@@ -126,6 +126,23 @@ class Hitbox extends FlxSpriteGroup
                 hitbox.add(add(K4 = createhitbox(639, "K4")));    
                 hitbox.add(add(K5 = createhitbox(852, "K5")));
                 hitbox.add(add(K6 = createhitbox(1065, "K6"))); 
+           case THIRTEEN:
+                hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox13k_hint'));
+                frameshb = Paths.getSparrowAtlas('hitbox/hitbox13k');
+                
+                hitbox.add(add(K1 = createhitbox(0, "K1"))); 
+                hitbox.add(add(K2 = createhitbox(98, "K2")));
+                hitbox.add(add(K3 = createhitbox(196, "K3"))); 
+                hitbox.add(add(K4 = createhitbox(294, "K4")));
+                hitbox.add(add(K5 = createhitbox(392, "K5"))); 
+                hitbox.add(add(K6 = createhitbox(490, "K6")));
+                hitbox.add(add(K7 = createhitbox(588, "K7")));
+                hitbox.add(add(K8 = createhitbox(686, "K8")));
+                hitbox.add(add(K9 = createhitbox(784, "K9")));
+                hitbox.add(add(K10 = createhitbox(882, "K10")));
+                hitbox.add(add(K11 = createhitbox(980, "K11"))); 
+                hitbox.add(add(K12 = createhitbox(1078, "K12")));
+                hitbox.add(add(K13 = createhitbox(1176, "K13")));
             case DEFAULT:
                 hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox_hint'));
                 frameshb = Paths.getSparrowAtlas('hitbox/hitbox');
@@ -203,6 +220,7 @@ enum HitboxType {
     SIX;
     SEVEN;
     NINE;
+    THIRTEEN;
 }
 
 /*if (widghtScreen == null)
