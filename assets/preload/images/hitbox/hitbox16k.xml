@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="16k.png">
+	<SubTexture name="k1" x="0" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k2" x="80" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k3" x="160" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+	<SubTexture name="k4" x="240" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+	<SubTexture name="k5" x="320" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+	<SubTexture name="k4" x="400" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+	<SubTexture name="k6" x="480" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+	<SubTexture name="k7" x="560" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+	<SubTexture name="k8" x="640" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+	<SubTexture name="k9" x="720" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k10" x="800" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k11" x="880" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k12" x="960" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k13" x="1040" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k14" x="1120" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k15" x="1200" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+        <SubTexture name="k16" x="1280" y="0" width="80" height="720" frameX="0" frameY="0" frameWidth="80" frameHeight="720"/>
+</TextureAtlas>
