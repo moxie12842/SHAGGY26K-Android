@@ -1168,6 +1168,8 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
+				
+		addHitbox(mania);
 
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
@@ -1860,7 +1862,8 @@ class PlayState extends MusicBeatState
 
 	public function startCountdown():Void
 	{	
-
+                _hitbox.visible = true;
+		
 		if(startedCountdown) {
 			return;
 		}
@@ -4170,6 +4173,7 @@ class PlayState extends MusicBeatState
 		camZooming = false;
 		inCutscene = false;
 		updateTime = false;
+		_hitbox.visible = false;
 
 		deathCounter = 0;
 		seenCutscene = false;
