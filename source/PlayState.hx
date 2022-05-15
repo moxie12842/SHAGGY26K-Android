@@ -45,6 +45,7 @@ import openfl.media.Video;
 import Achievements;
 import openfl.utils.Assets as OpenFlAssets;
 import flash.system.System;
+import ui.Hitbox;
 
 using StringTools;
 
@@ -1635,7 +1636,20 @@ class PlayState extends MusicBeatState
 					{
 						skip = true;
 					}
-					if (FlxG.keys.justReleased.ANY || skip)
+					#if android
+		            var justTouched:Bool = false;
+
+		            for (touch in FlxG.touches.list)
+		            {
+			            justTouched = false;
+
+			            if (touch.justPressed){
+				            justTouched = true;
+			            }
+		            }
+		            #end
+
+					if (FlxG.keys.justReleased.ANY || skip #if android || justTouched #end)
 					{
 						if ((curr_char <= dialogue[curr_dial].length) && !skip)
 						{
@@ -3185,7 +3199,7 @@ class PlayState extends MusicBeatState
 		}
 		botplayTxt.visible = cpuControlled;
 
-		if (FlxG.keys.justPressed.ENTER && startedCountdown && canPause)
+		if (FlxG.keys.justPressed.ENTER #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', []);
 			if(ret != FunkinLua.Function_Stop) {
