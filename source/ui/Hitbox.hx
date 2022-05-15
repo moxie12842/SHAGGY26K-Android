@@ -144,8 +144,8 @@ class Hitbox extends FlxSpriteGroup
                 hitbox.add(add(K12 = createhitbox(1078, "K12")));
                 hitbox.add(add(K13 = createhitbox(1176, "K13")));
            case TWENTYSIX:
-                hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox13k_hint'));
-                frameshb = Paths.getSparrowAtlas('hitbox/hitbox13k');
+                hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox26k_hint'));
+                frameshb = Paths.getSparrowAtlas('hitbox/hitbox26k');
                 
                 hitbox.add(add(K1 = createhitbox(0, "K1"))); 
                 hitbox.add(add(K2 = createhitbox(49, "K2")));
@@ -172,7 +172,46 @@ class Hitbox extends FlxSpriteGroup
                 hitbox.add(add(K23 = createhitbox(1078, "K23")));
                 hitbox.add(add(K24 = createhitbox(1127, "K24"))); 
                 hitbox.add(add(K25 = createhitbox(1176, "K25")));
-                hitbox.add(add(K26 = createhitbox(1225, "K26")));  
+                hitbox.add(add(K26 = createhitbox(1225, "K26")));
+           case SIXTEEN:
+                hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox16k_hint'));
+                frameshb = Paths.getSparrowAtlas('hitbox/hitbox16k');
+                
+                hitbox.add(add(K1 = createhitbox(0, "K1"))); 
+                hitbox.add(add(K2 = createhitbox(80, "K2")));
+                hitbox.add(add(K3 = createhitbox(160, "K3"))); 
+                hitbox.add(add(K4 = createhitbox(240, "K4")));
+                hitbox.add(add(K5 = createhitbox(320, "K5"))); 
+                hitbox.add(add(K6 = createhitbox(400, "K6")));
+                hitbox.add(add(K7 = createhitbox(480, "K7")));
+                hitbox.add(add(K8 = createhitbox(560, "K8")));
+                hitbox.add(add(K9 = createhitbox(640, "K9")));
+                hitbox.add(add(K10 = createhitbox(720, "K10")));
+                hitbox.add(add(K11 = createhitbox(800, "K11"))); 
+                hitbox.add(add(K12 = createhitbox(880, "K12")));
+                hitbox.add(add(K13 = createhitbox(960, "K13")));
+                hitbox.add(add(K14 = createhitbox(1040, "K14"))); 
+                hitbox.add(add(K15 = createhitbox(1120, "K15")));
+                hitbox.add(add(K16 = createhitbox(1200, "K16"))); 
+            case ONE:
+                hitbox_hint.loadGraphic(Paths.image('hitbox/1k_hint'));
+                frameshb = Paths.getSparrowAtlas('hitbox/1k');
+                
+                hitbox.add(add(K1 = createhitbox(0, "K1")));
+            case TEN:
+                hitbox_hint.loadGraphic(Paths.image('hitbox/10k_hint'));
+                frameshb = Paths.getSparrowAtlas('hitbox/10k');
+                
+                hitbox.add(add(K1 = createhitbox(0, "K1"))); 
+                hitbox.add(add(K2 = createhitbox(128, "K2")));
+                hitbox.add(add(K3 = createhitbox(256, "K3"))); 
+                hitbox.add(add(K4 = createhitbox(384, "K4")));
+                hitbox.add(add(K5 = createhitbox(512, "K5"))); 
+                hitbox.add(add(K6 = createhitbox(640, "K6")));
+                hitbox.add(add(K7 = createhitbox(768, "K7")));
+                hitbox.add(add(K8 = createhitbox(896, "K8")));
+                hitbox.add(add(K9 = createhitbox(1024, "K9"))); 
+                hitbox.add(add(K10 = createhitbox(1152, "K10")));    
             case DEFAULT:
                 hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox_hint'));
                 frameshb = Paths.getSparrowAtlas('hitbox/hitbox');
