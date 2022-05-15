@@ -24,6 +24,11 @@ class CreditsState extends MusicBeatState
 	private var iconArray:Array<AttachedSprite> = [];
 
 	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
+		['Android Port'],
+		['Heropowerbrine','Hero','The guy who made 26 keys on android possible(and the main porter)','https://github.com/Heropowerbrine', 0xFF007619],
+		['Saw (M.A. Jigsaw)','saw','OG Android extra keys code, hitboxes, video code','https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ', 0xFFFF9E00],
+		['kviks','kviks','OG 13 keys hitbox','https://www.youtube.com/channel/UChPjrBq7z7oSVcB3FcHMDCA', 0xFFF73838],
+		['Kaique62','Kaiqueplaceholder','told me how to make the hitboxes :)','https://www.youtube.com/channel/UChJrX90urlmG-UYS8QLiY_Q', 0xFFFF9E00],
 		['The Shaggy mod'],
 		['srPerez', 'perez', 'Coder, Main artist & animator, Main composer, Co-charter', 'https://twitter.com/NewSrPerez', 0xFFFF9E00],
 		['MORO', 'moro', 'Artist & animator of WB Shaggy sprites\n& Chapter 5 cutscene', 'https://twitter.com/Moro0986', 0xFF7027AD],
