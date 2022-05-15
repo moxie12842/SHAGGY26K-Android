@@ -290,6 +290,10 @@ enum HitboxType {
     SEVEN;
     NINE;
     THIRTEEN;
+    TWENTYSIX;
+    SIXTEEN;
+    ONE;
+    TEN;
 }
 
 /*if (widghtScreen == null)
