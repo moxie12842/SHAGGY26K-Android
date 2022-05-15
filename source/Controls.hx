@@ -1889,6 +1889,19 @@ class Controls extends FlxActionSet
 		inline forEachBound(Control.G13, (action, state) -> addbutton(action, hitbox.K14, state));
 		inline forEachBound(Control.G14, (action, state) -> addbutton(action, hitbox.K15, state));
 		inline forEachBound(Control.G15, (action, state) -> addbutton(action, hitbox.K16, state));
+	case ONE:
+		inline forEachBound(Control.B5, (action, state) -> addbutton(action, hitbox.K1, state));
+	case TEN:
+		inline forEachBound(Control.C0, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.C1, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.C2, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.C3, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.C5, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.C7, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.C8, (action, state) -> addbutton(action, hitbox.K7, state));
+		inline forEachBound(Control.C9, (action, state) -> addbutton(action, hitbox.K8, state));
+		inline forEachBound(Control.C10, (action, state) -> addbutton(action, hitbox.K9, state));
+		inline forEachBound(Control.C11, (action, state) -> addbutton(action, hitbox.K10, state));
 	case DEFAULT:	
 		inline forEachBound(Control.NOTE_UP, (action, state) -> addbutton(action, hitbox.K3, state));
 		inline forEachBound(Control.NOTE_DOWN, (action, state) -> addbutton(action, hitbox.K2, state));
