@@ -4588,7 +4588,8 @@ class PlayState extends MusicBeatState
 
 	private function keyShit():Void
 	{
-		// HOLDING
+		
+		// vars
 		var up = _hitbox.K3.pressed || controls.NOTE_UP;
 		var right = _hitbox.K4.pressed || controls.NOTE_RIGHT;
 		var down = _hitbox.K2.pressed || controls.NOTE_DOWN;
