@@ -1807,35 +1807,93 @@ class Controls extends FlxActionSet
 
 	switch(Type){					
 	case SIX:
-		inline forEachBound(Control.L1, (action, state) -> addbutton(action, hitbox.K1, state));
-		inline forEachBound(Control.U1, (action, state) -> addbutton(action, hitbox.K2, state));
-		inline forEachBound(Control.R1, (action, state) -> addbutton(action, hitbox.K3, state));
-		inline forEachBound(Control.L2, (action, state) -> addbutton(action, hitbox.K4, state));
-		inline forEachBound(Control.D1, (action, state) -> addbutton(action, hitbox.K5, state));
-		inline forEachBound(Control.R2, (action, state) -> addbutton(action, hitbox.K6, state));									
+		inline forEachBound(Control.A1, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.A2, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.A3, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.A4, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.A5, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.A6, (action, state) -> addbutton(action, hitbox.K6, state));									
 	case SEVEN:	
-		inline forEachBound(Control.L1, (action, state) -> addbutton(action, hitbox.K1, state));
-		inline forEachBound(Control.U1, (action, state) -> addbutton(action, hitbox.K2, state));
-		inline forEachBound(Control.R1, (action, state) -> addbutton(action, hitbox.K3, state));
-		inline forEachBound(Control.N4, (action, state) -> addbutton(action, hitbox.K4, state));
-		inline forEachBound(Control.L2, (action, state) -> addbutton(action, hitbox.K5, state));
-		inline forEachBound(Control.D1, (action, state) -> addbutton(action, hitbox.K6, state));
-		inline forEachBound(Control.R2, (action, state) -> addbutton(action, hitbox.K7, state));					
+		inline forEachBound(Control.A1, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.A2, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.A3, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.A4, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.A5, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.A6, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.A7, (action, state) -> addbutton(action, hitbox.K7, state));					
 	case NINE:
-		inline forEachBound(Control.N0, (action, state) -> addbutton(action, hitbox.K1, state));
-		inline forEachBound(Control.N1, (action, state) -> addbutton(action, hitbox.K2, state));
-		inline forEachBound(Control.N2, (action, state) -> addbutton(action, hitbox.K3, state));
-		inline forEachBound(Control.N3, (action, state) -> addbutton(action, hitbox.K4, state));
-		inline forEachBound(Control.N4, (action, state) -> addbutton(action, hitbox.K5, state));
-		inline forEachBound(Control.N5, (action, state) -> addbutton(action, hitbox.K6, state));
-		inline forEachBound(Control.N6, (action, state) -> addbutton(action, hitbox.K7, state));
-		inline forEachBound(Control.N7, (action, state) -> addbutton(action, hitbox.K8, state));
-		inline forEachBound(Control.N8, (action, state) -> addbutton(action, hitbox.K9, state));											
+		inline forEachBound(Control.B1, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.B2, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.B3, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.B4, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.B5, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.B6, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.B7, (action, state) -> addbutton(action, hitbox.K7, state));
+		inline forEachBound(Control.B8, (action, state) -> addbutton(action, hitbox.K8, state));
+		inline forEachBound(Control.B9, (action, state) -> addbutton(action, hitbox.K9, state));
+	case THIRTEEN:
+		inline forEachBound(Control.C0, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.C1, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.C2, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.C3, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.C4, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.C5, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.C6, (action, state) -> addbutton(action, hitbox.K7, state));
+		inline forEachBound(Control.C7, (action, state) -> addbutton(action, hitbox.K8, state));
+		inline forEachBound(Control.C8, (action, state) -> addbutton(action, hitbox.K9, state));
+		inline forEachBound(Control.C9, (action, state) -> addbutton(action, hitbox.K10, state));
+		inline forEachBound(Control.C10, (action, state) -> addbutton(action, hitbox.K11, state));
+		inline forEachBound(Control.C11, (action, state) -> addbutton(action, hitbox.K12, state));
+		inline forEachBound(Control.C12, (action, state) -> addbutton(action, hitbox.K13, state));
+	case TWENTYSIX:
+		inline forEachBound(Control.F0, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.F1, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.F2, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.F3, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.F4, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.F5, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.F6, (action, state) -> addbutton(action, hitbox.K7, state));
+		inline forEachBound(Control.F7, (action, state) -> addbutton(action, hitbox.K8, state));
+		inline forEachBound(Control.F8, (action, state) -> addbutton(action, hitbox.K9, state));
+		inline forEachBound(Control.F9, (action, state) -> addbutton(action, hitbox.K10, state));
+		inline forEachBound(Control.F10, (action, state) -> addbutton(action, hitbox.K11, state));
+		inline forEachBound(Control.F11, (action, state) -> addbutton(action, hitbox.K12, state));
+		inline forEachBound(Control.F12, (action, state) -> addbutton(action, hitbox.K13, state));
+		inline forEachBound(Control.F13, (action, state) -> addbutton(action, hitbox.K14, state));
+		inline forEachBound(Control.F14, (action, state) -> addbutton(action, hitbox.K15, state));
+		inline forEachBound(Control.F15, (action, state) -> addbutton(action, hitbox.K16, state));
+		inline forEachBound(Control.F16, (action, state) -> addbutton(action, hitbox.K17, state));
+		inline forEachBound(Control.F17, (action, state) -> addbutton(action, hitbox.K18, state));
+		inline forEachBound(Control.F18, (action, state) -> addbutton(action, hitbox.K19, state));
+		inline forEachBound(Control.F19, (action, state) -> addbutton(action, hitbox.K20, state));
+		inline forEachBound(Control.F20, (action, state) -> addbutton(action, hitbox.K21, state));
+		inline forEachBound(Control.F21, (action, state) -> addbutton(action, hitbox.K22, state));
+		inline forEachBound(Control.F22, (action, state) -> addbutton(action, hitbox.K23, state));
+		inline forEachBound(Control.F23, (action, state) -> addbutton(action, hitbox.K24, state));
+		inline forEachBound(Control.F24, (action, state) -> addbutton(action, hitbox.K25, state));
+		inline forEachBound(Control.F25, (action, state) -> addbutton(action, hitbox.K26, state));
+	case SIXTEEN:
+		inline forEachBound(Control.G0, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.G1, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.G2, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.G3, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.G4, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.G5, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.G6, (action, state) -> addbutton(action, hitbox.K7, state));
+		inline forEachBound(Control.G7, (action, state) -> addbutton(action, hitbox.K8, state));
+		inline forEachBound(Control.G8, (action, state) -> addbutton(action, hitbox.K9, state));
+		inline forEachBound(Control.G9, (action, state) -> addbutton(action, hitbox.K10, state));
+		inline forEachBound(Control.G10, (action, state) -> addbutton(action, hitbox.K11, state));
+		inline forEachBound(Control.G11, (action, state) -> addbutton(action, hitbox.K12, state));
+		inline forEachBound(Control.G12, (action, state) -> addbutton(action, hitbox.K13, state));
+		inline forEachBound(Control.G13, (action, state) -> addbutton(action, hitbox.K14, state));
+		inline forEachBound(Control.G14, (action, state) -> addbutton(action, hitbox.K15, state));
+		inline forEachBound(Control.G15, (action, state) -> addbutton(action, hitbox.K16, state));
 	case DEFAULT:	
-		inline forEachBound(Control.UP, (action, state) -> addbutton(action, hitbox.K3, state));
-		inline forEachBound(Control.DOWN, (action, state) -> addbutton(action, hitbox.K2, state));
-		inline forEachBound(Control.LEFT, (action, state) -> addbutton(action, hitbox.K1, state));
-		inline forEachBound(Control.RIGHT, (action, state) -> addbutton(action, hitbox.K4, state));	
+		inline forEachBound(Control.NOTE_UP, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.NOTE_DOWN, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.NOTE_LEFT, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.NOTE_RIGHT, (action, state) -> addbutton(action, hitbox.K4, state));	
 	}
 	}
 
