@@ -4604,7 +4604,7 @@ class PlayState extends MusicBeatState
 		var K7 = _hitbox.K7.pressed || controls.A7 || controls.B7 || controls.C6 || controls.F6 || controls.G6;
 		var K8 = _hitbox.K8.pressed || controls.B8 || controls.C7 || controls.F7 || controls.G7;
 		var K9 = _hitbox.K9.pressed || controls.B9 || controls.C8 || controls.F8 || controls.G8;
-		var K10 = _hitbox.K10.pressed || controls.C9 || controls.F9; || controls.G9;
+		var K10 = _hitbox.K10.pressed || controls.C9 || controls.F9 || controls.G9;
 		var K11 = _hitbox.K11.pressed || controls.C10 || controls.F10 || controls.G10;
 		var K12 = _hitbox.K12.pressed || controls.C11 || controls.F11 || controls.G11;
 		var K13 = _hitbox.K13.pressed || controls.C12 || controls.F12 || controls.G12;
