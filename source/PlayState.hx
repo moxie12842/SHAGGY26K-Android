@@ -4621,360 +4621,394 @@ class PlayState extends MusicBeatState
 		var K25 = _hitbox.K25.pressed || controls.F24;
 		var K26 = _hitbox.K26.pressed || controls.F25;
 
-		var K1P = _hitbox.K1.justPressed || controls.A1_P || controls.B1_P;
-		var K2P = _hitbox.K2.justPressed || controls.A2_P || controls.B2_P;
-		var K3P = _hitbox.K3.justPressed || controls.A3_P || controls.B3_P;
-		var K4P = _hitbox.K4.justPressed || controls.A4_P || controls.B4_P;
-		var K5P = _hitbox.K5.justPressed || controls.A5_P || controls.B5_P;
-		var K6P = _hitbox.K6.justPressed || controls.A6_P || controls.B6_P;
-		var K7P = _hitbox.K7.justPressed || controls.A7_P || controls.B7_P;
-		var K8P = _hitbox.K8.justPressed || controls.B8_P;
-		var K9P = _hitbox.K9.justPressed || controls.B9_P;
+		var K1P = _hitbox.K1.justPressed || controls.A1_P || controls.B1_P; || controls.C0_P; || controls.F0_P; || controls.G0_P;
+		var K2P = _hitbox.K2.justPressed || controls.A2_P || controls.B2_P; || controls.C1_P; || controls.F1_P; || controls.G1_P;
+		var K3P = _hitbox.K3.justPressed || controls.A3_P || controls.B3_P; || controls.C2_P; || controls.F2_P; || controls.G2_P;
+		var K4P = _hitbox.K4.justPressed || controls.A4_P || controls.B4_P; || controls.C3_P; || controls.F3_P; || controls.G3_P;
+		var K5P = _hitbox.K5.justPressed || controls.A5_P || controls.B5_P; || controls.C4_P; || controls.F4_P; || controls.G4_P;
+		var K6P = _hitbox.K6.justPressed || controls.A6_P || controls.B6_P; || controls.C5_P; || controls.F5_P; || controls.G5_P;
+		var K7P = _hitbox.K7.justPressed || controls.A7_P || controls.B7_P; || controls.C6_P; || controls.F6_P; || controls.G6_P;
+		var K8P = _hitbox.K8.justPressed || controls.B8_P; || controls.C7_P; || controls.F7_P; || controls.G7_P;
+		var K9P = _hitbox.K9.justPressed || controls.B9_P; || controls.C8_P; || controls.F8_P; || controls.G8_P;
+		var K10 = _hitbox.K10.justPressed || controls.C9_P; || controls.F9_P; || controls.G9_P;
+		var K11 = _hitbox.K11.justPressed || controls.C10_P; || controls.F10_P; || controls.G10_P;
+		var K12 = _hitbox.K12.justPressed || controls.C11_P; || controls.F11_P; || controls.G11_P;
+		var K13 = _hitbox.K13.justPressed || controls.C12_P; || controls.F12_P; || controls.G12_P;
+		var K14 = _hitbox.K14.justPressed || controls.F13_P; || controls.G13_P;
+		var K15 = _hitbox.K15.justPressed || controls.F14_P; || controls.G14_P;
+		var K16 = _hitbox.K16.justPressed || controls.F15_P; || controls.G15_P;
+		var K17 = _hitbox.K17.justPressed || controls.F16_P;
+		var K18 = _hitbox.K18.justPressed || controls.F17_P;
+		var K19 = _hitbox.K19.justPressed || controls.F18_P;
+		var K20 = _hitbox.K20.justPressed || controls.F19_P;
+		var K21 = _hitbox.K21.justPressed || controls.F20_P;
+		var K22 = _hitbox.K22.justPressed || controls.F21_P;
+		var K23 = _hitbox.K23.justPressed || controls.F22_P;
+		var K24 = _hitbox.K24.justPressed || controls.F23_P;
+		var K25 = _hitbox.K25.justPressed || controls.F24_P;
+		var K26 = _hitbox.K26.justPressed || controls.F25_P;
 
-		var K1R = _hitbox.K1.justReleased || controls.A1_R || controls.B1_R;
-		var K2R = _hitbox.K2.justReleased || controls.A2_R || controls.B2_R;
-		var K3R = _hitbox.K3.justReleased || controls.A3_R || controls.B3_R;
-		var K4R = _hitbox.K4.justReleased || controls.A4_R || controls.B4_R;
-		var K5R = _hitbox.K5.justReleased || controls.A5_R || controls.B5_R;
-		var K6R = _hitbox.K6.justReleased || controls.A6_R || controls.B6_R;
-		var K7R = _hitbox.K7.justReleased || controls.A7_R || controls.B7_R;
-		var K8R = _hitbox.K8.justReleased || controls.B8_R;
-		var K9R = _hitbox.K9.justReleased || controls.B9_R;
+		var K1R = _hitbox.K1.justReleased || controls.A1_R || controls.B1_R; || controls.C0_R; || controls.F0_R; || controls.G0_R;
+		var K2R = _hitbox.K2.justReleased || controls.A2_R || controls.B2_R; || controls.C1_R; || controls.F1_R; || controls.G1_R;
+		var K3R = _hitbox.K3.justReleased || controls.A3_R || controls.B3_R; || controls.C2_R; || controls.F2_R; || controls.G2_R;
+		var K4R = _hitbox.K4.justReleased || controls.A4_R || controls.B4_R; || controls.C3_R; || controls.F3_R; || controls.G3_R;
+		var K5R = _hitbox.K5.justReleased || controls.A5_R || controls.B5_R; || controls.C4_R; || controls.F4_R; || controls.G4_R;
+		var K6R = _hitbox.K6.justReleased || controls.A6_R || controls.B6_R; || controls.C5_R; || controls.F5_R; || controls.G5_R;
+		var K7R = _hitbox.K7.justReleased || controls.A7_R || controls.B7_R; || controls.C6_R; || controls.F6_R; || controls.G6_R;
+		var K8R = _hitbox.K8.justReleased || controls.B8_R; || controls.C7_R; || controls.F7_R; || controls.G7_R;
+		var K9R = _hitbox.K9.justReleased || controls.B9_R; || controls.C8_R; || controls.F8_R; || controls.G8_R;
+		var K10 = _hitbox.K10.justReleased || controls.C9_R; || controls.F9_R; || controls.G9_R;
+		var K11 = _hitbox.K11.justReleased || controls.C10_R; || controls.F10_R; || controls.G10_R;
+		var K12 = _hitbox.K12.justReleased || controls.C11_R; || controls.F11_R; || controls.G11_R;
+		var K13 = _hitbox.K13.justReleased || controls.C12_R; || controls.F12_R; || controls.G12_R;
+		var K14 = _hitbox.K14.justReleased || controls.F13_R; || controls.G13_R;
+		var K15 = _hitbox.K15.justReleased || controls.F14_R; || controls.G14_R;
+		var K16 = _hitbox.K16.justReleased || controls.F15_R; || controls.G15_R;
+		var K17 = _hitbox.K17.justReleased || controls.F16_R;
+		var K18 = _hitbox.K18.justReleased || controls.F17_R;
+		var K19 = _hitbox.K19.justReleased || controls.F18_R;
+		var K20 = _hitbox.K20.justReleased || controls.F19_R;
+		var K21 = _hitbox.K21.justReleased || controls.F20_R;
+		var K22 = _hitbox.K22.justReleased || controls.F21_R;
+		var K23 = _hitbox.K23.justReleased || controls.F22_R;
+		var K24 = _hitbox.K24.justReleased || controls.F23_R;
+		var K25 = _hitbox.K25.justReleased || controls.F24_R;
+		var K26 = _hitbox.K26.justReleased || controls.F25_R;
 
 		var sH = [
-			controls.A1,
-			controls.A2,
-			controls.A3,
-			controls.A5,
-			controls.A6,
-			controls.A7
+			K1,
+			K2,
+			K3,
+			K4,
+			K5,
+			K6
 		];
 
 		var vH = [
-			controls.A1,
-			controls.A2,
-			controls.A3,
-			controls.A4,
-			controls.A5,
-			controls.A6,
-			controls.A7
+			K1,
+			K2,
+			K3,
+			K4,
+			K5,
+			K6,
+			K7
 		];
 
 		var iH = [
-			controls.A4
+			K1
 		];
 
 		var nH = [
-			controls.B1,
-			controls.B2,
-			controls.B3,
-			controls.B4,
-			controls.B5,
-			controls.B6,
-			controls.B7,
-			controls.B8,
-			controls.B9
+	                K1,
+			K2,
+			K3,
+			K4,
+			K5,
+			K6,
+			K7,
+			K8,
+			K9
 		];
 
 		var tH = [
-			controls.C0,
-			controls.C1,
-			controls.C2,
-			controls.C3,
-			controls.C4,
-			controls.C5,
-			controls.C6,
-			controls.C7,
-			controls.C8,
-			controls.C9,
-			controls.C10,
-			controls.C11,
-			controls.C12
+			K1,
+			K2,
+			K3,
+			K4,
+			K5,
+			K6,
+			K7,
+			K8,
+			K9,
+			K10,
+			K11,
+			K12,
+			K13
 		];
 
 		var fH = [
-			controls.F0,
-			controls.F1,
-			controls.F2,
-			controls.F3,
-			controls.F4,
-			controls.F5,
-			controls.F6,
-			controls.F7,
-			controls.F8,
-			controls.F9,
-			controls.F10,
-			controls.F11,
-			controls.F12,
-			controls.F13,
-			controls.F14,
-			controls.F15,
-			controls.F16,
-			controls.F17,
-			controls.F18,
-			controls.F19,
-			controls.F20,
-			controls.F21,
-			controls.F22,
-			controls.F23,
-			controls.F24,
-			controls.F25
+			K1,
+			K2,
+			K3,
+			K4,
+			K5,
+			K6,
+			K7,
+			K8,
+			K9,
+			K10,
+			K11,
+			K12,
+			K13,
+			K14,
+			K15,
+			K16,
+			K17,
+			K18,
+			K19,
+			K20,
+			K21,
+			K22,
+			K23,
+			K24,
+			K25,
+			K26
 		];		
 
 		var lH = [
-			controls.C0,
-			controls.C1,
-			controls.C2,
-			controls.C3,
-			controls.C5,
-			controls.C7,
-			controls.C9,
-			controls.C10,
-			controls.C11,
-			controls.C12
+			K1,
+			K2,
+			K3,
+			K4,
+			K5,
+			K6,
+			K7,
+			K8,
+			K9,
+			K10
 		];
 
 		var sP = [
-			controls.A1_P,
-			controls.A2_P,
-			controls.A3_P,
-			controls.A5_P,
-			controls.A6_P,
-			controls.A7_P
+			K1P,
+			K2P,
+			K3P,
+			K4P,
+			K5P,
+			K6P
 		];
 
 		var vP = [
-			controls.A1_P,
-			controls.A2_P,
-			controls.A3_P,
-			controls.A4_P,
-			controls.A5_P,
-			controls.A6_P,
-			controls.A7_P
+			K1P,
+			K2P,
+			K3P,
+			K4P,
+			K5P,
+			K6P,
+			K7P
 		];
 
 		var iP = [
-			controls.A4_P
+			K1P
 		];
 
 		var nP = [
-			controls.B1_P,
-			controls.B2_P,
-			controls.B3_P,
-			controls.B4_P,
-			controls.B5_P,
-			controls.B6_P,
-			controls.B7_P,
-			controls.B8_P,
-			controls.B9_P
+			K1P,
+			K2P,
+			K3P,
+			K4P,
+			K5P,
+			K6P,
+			K7P,
+			K8P,
+			K9P
 		];
 
 		var tP = [
-			controls.C0_P,
-			controls.C1_P,
-			controls.C2_P,
-			controls.C3_P,
-			controls.C4_P,
-			controls.C5_P,
-			controls.C6_P,
-			controls.C7_P,
-			controls.C8_P,
-			controls.C9_P,
-			controls.C10_P,
-			controls.C11_P,
-			controls.C12_P
+			K1P,
+			K2P,
+			K3P,
+			K4P,
+			K5P,
+			K6P,
+			K7P,
+			K8P,
+			K9P,
+			K10P,
+			K11P,
+			K12P,
+			K13P
 		];
 
 		var fP = [
-			controls.F0_P,
-			controls.F1_P,
-			controls.F2_P,
-			controls.F3_P,
-			controls.F4_P,
-			controls.F5_P,
-			controls.F6_P,
-			controls.F7_P,
-			controls.F8_P,
-			controls.F9_P,
-			controls.F10_P,
-			controls.F11_P,
-			controls.F12_P,
-			controls.F13_P,
-			controls.F14_P,
-			controls.F15_P,
-			controls.F16_P,
-			controls.F17_P,
-			controls.F18_P,
-			controls.F19_P,
-			controls.F20_P,
-			controls.F21_P,
-			controls.F22_P,
-			controls.F23_P,
-			controls.F24_P,
-			controls.F25_P
+			K1P,
+			K2P,
+			K3P,
+			K4P,
+			K5P,
+			K6P,
+			K7P,
+			K8P,
+			K9P,
+			K10P,
+			K11P,
+			K12P,
+			K13P,
+			K14P,
+			K15P,
+			K16P,
+			K17P,
+			K18P,
+			K19P,
+			K20P,
+			K21P,
+			K22P,
+			K23P,
+			K24P,
+			K25P,
+			K26P
 		];
 
 		var lP = [
-			controls.C0_P,
-			controls.C1_P,
-			controls.C2_P,
-			controls.C3_P,
-			controls.C5_P,
-			controls.C7_P,
-			controls.C9_P,
-			controls.C10_P,
-			controls.C11_P,
-			controls.C12_P
+			K1P,
+			K2P,
+			K3P,
+			K4P,
+			K5P,
+			K6P,
+			K7P,
+			K8P,
+			K9P,
+			K10P
 		];
 
 		var sR = [
-			controls.A1_R,
-			controls.A2_R,
-			controls.A3_R,
-			controls.A5_R,
-			controls.A6_R,
-			controls.A7_R
+			K1R,
+			K2R,
+			K3R,
+			K4R,
+			K5R,
+			K6R
 		];
 
 		var vR = [
-			controls.A1_R,
-			controls.A2_R,
-			controls.A3_R,
-			controls.A4_R,
-			controls.A5_R,
-			controls.A6_R,
-			controls.A7_R
+			K1R,
+			K2R,
+			K3R,
+			K4R,
+			K5R,
+			K6R,
+			K7R
 		];
 
 		var iR = [
-			controls.A4_R
+			K1R
 		];
 
 		var nR = [
-			controls.B1_R,
-			controls.B2_R,
-			controls.B3_R,
-			controls.B4_R,
-			controls.B5_R,
-			controls.B6_R,
-			controls.B7_R,
-			controls.B8_R,
-			controls.B9_R
+			K1R,
+			K2R,
+			K3R,
+			K4R,
+			K5R,
+			K6R,
+			K7R,
+			K8R,
+			K9R
 		];
 
 		var tR = [
-			controls.C0_R,
-			controls.C1_R,
-			controls.C2_R,
-			controls.C3_R,
-			controls.C4_R,
-			controls.C5_R,
-			controls.C6_R,
-			controls.C7_R,
-			controls.C8_R,
-			controls.C9_R,
-			controls.C10_R,
-			controls.C11_R,
-			controls.C12_R
+			K1R,
+			K2R,
+			K3R,
+			K4R,
+			K5R,
+			K6R,
+			K7R,
+			K8R,
+			K9R,
+			K10R,
+			K11R,
+			K12R,
+			K13R
 		];
 
 		var fR = [
-			controls.F0_R,
-			controls.F1_R,
-			controls.F2_R,
-			controls.F3_R,
-			controls.F4_R,
-			controls.F5_R,
-			controls.F6_R,
-			controls.F7_R,
-			controls.F8_R,
-			controls.F9_R,
-			controls.F10_R,
-			controls.F11_R,
-			controls.F12_R,
-			controls.F13_R,
-			controls.F14_R,
-			controls.F15_R,
-			controls.F16_R,
-			controls.F17_R,
-			controls.F18_R,
-			controls.F19_R,
-			controls.F20_R,
-			controls.F21_R,
-			controls.F22_R,
-			controls.F23_R,
-			controls.F24_R,
-			controls.F25_R
+			K1R,
+			K2R,
+			K3R,
+			K4R,
+			K5R,
+			K6R,
+			K7R,
+			K8R,
+			K9R,
+			K10R,
+			K11R,
+			K12R,
+			K13R,
+			K14R,
+			K15R,
+			K16R,
+			K17R,
+			K18R,
+			K19R,
+			K20R,
+			K21R,
+			K22R,
+			K23R,
+			K24R,
+			K25R,
+			K26R
 		];
 
 		var gH = [
-			controls.G0,
-			controls.G1,
-			controls.G2,
-			controls.G3,
-			controls.G4,
-			controls.G5,
-			controls.G6,
-			controls.G7,
-			controls.G8,
-			controls.G9,
-			controls.G10,
-			controls.G11,
-			controls.G12,
-			controls.G13,
-			controls.G14,
-			controls.G15
+			K1,
+			K2,
+			K3,
+			K4,
+			K5,
+			K6,
+			K7,
+			K8,
+			K9,
+			K10,
+			K11,
+			K12,
+			K13,
+			K14,
+			K15,
+			K16
 		];
 
 		var gP = [
-			controls.G0_P,
-			controls.G1_P,
-			controls.G2_P,
-			controls.G3_P,
-			controls.G4_P,
-			controls.G5_P,
-			controls.G6_P,
-			controls.G7_P,
-			controls.G8_P,
-			controls.G9_P,
-			controls.G10_P,
-			controls.G11_P,
-			controls.G12_P,
-			controls.G13_P,
-			controls.G14_P,
-			controls.G15_P
+			K1P,
+			K2P,
+			K3P,
+			K4P,
+			K5P,
+			K6P,
+			K7P,
+			K8P,
+			K9P,
+			K10P,
+			K11P,
+			K12P,
+			K13P,
+			K14P,
+			K15P,
+			K16P
 		];
 
 		var gR = [
-			controls.G0_R,
-			controls.G1_R,
-			controls.G2_R,
-			controls.G3_R,
-			controls.G4_R,
-			controls.G5_R,
-			controls.G6_R,
-			controls.G7_R,
-			controls.G8_R,
-			controls.G9_R,
-			controls.G10_R,
-			controls.G11_R,
-			controls.G12_R,
-			controls.G13_R,
-			controls.G14_R,
-			controls.G15_R
+			K1R,
+			K2R,
+			K3R,
+			K4R,
+			K5R,
+			K6R,
+			K7R,
+			K8R,
+			K9R,
+			K10R,
+			K11R,
+			K12R,
+			K13R,
+			K14R,
+			K15R,
+			K16R
 		];
 
 		var lR = [
-			controls.C0_R,
-			controls.C1_R,
-			controls.C2_R,
-			controls.C3_R,
-			controls.C5_R,
-			controls.C7_R,
-			controls.C9_R,
-			controls.C10_R,
-			controls.C11_R,
-			controls.C12_R
+			K1R,
+			K2R,
+			K3R,
+			K4R,
+			K5R,
+			K6R,
+			K7R,
+			K8R,
+			K9R,
+			K10R
 		];
 
 		var upP = _hitbox.K3.justPressed || controls.NOTE_UP_P;
