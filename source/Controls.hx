@@ -1800,6 +1800,44 @@ class Controls extends FlxActionSet
 		//action.addInput(button, state);
 	}
 
+	public function setHitBox(hitbox:Hitbox, ?Type:HitboxType) 
+	{
+	if (Type == null)
+		Type = DEFAULT;
+
+	switch(Type){					
+	case SIX:
+		inline forEachBound(Control.L1, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.U1, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.R1, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.L2, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.D1, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.R2, (action, state) -> addbutton(action, hitbox.K6, state));									
+	case SEVEN:	
+		inline forEachBound(Control.L1, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.U1, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.R1, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.N4, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.L2, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.D1, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.R2, (action, state) -> addbutton(action, hitbox.K7, state));					
+	case NINE:
+		inline forEachBound(Control.N0, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.N1, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.N2, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.N3, (action, state) -> addbutton(action, hitbox.K4, state));
+		inline forEachBound(Control.N4, (action, state) -> addbutton(action, hitbox.K5, state));
+		inline forEachBound(Control.N5, (action, state) -> addbutton(action, hitbox.K6, state));
+		inline forEachBound(Control.N6, (action, state) -> addbutton(action, hitbox.K7, state));
+		inline forEachBound(Control.N7, (action, state) -> addbutton(action, hitbox.K8, state));
+		inline forEachBound(Control.N8, (action, state) -> addbutton(action, hitbox.K9, state));											
+	case DEFAULT:	
+		inline forEachBound(Control.UP, (action, state) -> addbutton(action, hitbox.K3, state));
+		inline forEachBound(Control.DOWN, (action, state) -> addbutton(action, hitbox.K2, state));
+		inline forEachBound(Control.LEFT, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.RIGHT, (action, state) -> addbutton(action, hitbox.K4, state));	
+	}
+	}
 
 	public function setVirtualPad(virtualPad:FlxVirtualPad, ?DPad:FlxDPadMode, ?Action:FlxActionMode) {
 		if (DPad == null)
