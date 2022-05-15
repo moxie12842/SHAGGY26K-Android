@@ -4589,10 +4589,57 @@ class PlayState extends MusicBeatState
 	private function keyShit():Void
 	{
 		// HOLDING
-		var up = controls.NOTE_UP;
-		var right = controls.NOTE_RIGHT;
-		var down = controls.NOTE_DOWN;
-		var left = controls.NOTE_LEFT;
+		var up = _hitbox.K3.pressed || controls.NOTE_UP;
+		var right = _hitbox.K4.pressed || controls.NOTE_RIGHT;
+		var down = _hitbox.K2.pressed || controls.NOTE_DOWN;
+		var left = _hitbox.K1.pressed || controls.NOTE_LEFT;
+		
+		var K1 = _hitbox.K1.pressed || controls.A1 || controls.B1; || controls.C0; || controls.F0; || controls.G0;
+		var K2 = _hitbox.K2.pressed || controls.A2 || controls.B2; || controls.C1; || controls.F1; || controls.G1;
+		var K3 = _hitbox.K3.pressed || controls.A3 || controls.B3; || controls.C2; || controls.F2; || controls.G2;
+		var K4 = _hitbox.K4.pressed || controls.A4 || controls.B4; || controls.C3; || controls.F3; || controls.G3;
+		var K5 = _hitbox.K5.pressed || controls.A5 || controls.B5; || controls.C4; || controls.F4; || controls.G4;
+		var K6 = _hitbox.K6.pressed || controls.A6 || controls.B6; || controls.C5; || controls.F5; || controls.G5;
+		var K7 = _hitbox.K7.pressed || controls.A7 || controls.B7; || controls.C6; || controls.F6; || controls.G6;
+		var K8 = _hitbox.K8.pressed || controls.B8; || controls.C7; || controls.F7; || controls.G7;
+		var K9 = _hitbox.K9.pressed || controls.B9; || controls.C8; || controls.F8; || controls.G8;
+		var K10 = _hitbox.K10.pressed || controls.C9; || controls.F9; || controls.G9;
+		var K11 = _hitbox.K11.pressed || controls.C10; || controls.F10; || controls.G10;
+		var K12 = _hitbox.K12.pressed || controls.C11; || controls.F11; || controls.G11;
+		var K13 = _hitbox.K13.pressed || controls.C12; || controls.F12; || controls.G12;
+		var K14 = _hitbox.K14.pressed || controls.F13; || controls.G13;
+		var K15 = _hitbox.K15.pressed || controls.F14; || controls.G14;
+		var K16 = _hitbox.K16.pressed || controls.F15; || controls.G15;
+		var K17 = _hitbox.K17.pressed || controls.F16;
+		var K18 = _hitbox.K18.pressed || controls.F17;
+		var K19 = _hitbox.K19.pressed || controls.F18;
+		var K20 = _hitbox.K20.pressed || controls.F19;
+		var K21 = _hitbox.K21.pressed || controls.F20;
+		var K22 = _hitbox.K22.pressed || controls.F21;
+		var K23 = _hitbox.K23.pressed || controls.F22;
+		var K24 = _hitbox.K24.pressed || controls.F23;
+		var K25 = _hitbox.K25.pressed || controls.F24;
+		var K26 = _hitbox.K26.pressed || controls.F25;
+
+		var K1P = _hitbox.K1.justPressed || controls.A1_P || controls.B1_P;
+		var K2P = _hitbox.K2.justPressed || controls.A2_P || controls.B2_P;
+		var K3P = _hitbox.K3.justPressed || controls.A3_P || controls.B3_P;
+		var K4P = _hitbox.K4.justPressed || controls.A4_P || controls.B4_P;
+		var K5P = _hitbox.K5.justPressed || controls.A5_P || controls.B5_P;
+		var K6P = _hitbox.K6.justPressed || controls.A6_P || controls.B6_P;
+		var K7P = _hitbox.K7.justPressed || controls.A7_P || controls.B7_P;
+		var K8P = _hitbox.K8.justPressed || controls.B8_P;
+		var K9P = _hitbox.K9.justPressed || controls.B9_P;
+
+		var K1R = _hitbox.K1.justReleased || controls.A1_R || controls.B1_R;
+		var K2R = _hitbox.K2.justReleased || controls.A2_R || controls.B2_R;
+		var K3R = _hitbox.K3.justReleased || controls.A3_R || controls.B3_R;
+		var K4R = _hitbox.K4.justReleased || controls.A4_R || controls.B4_R;
+		var K5R = _hitbox.K5.justReleased || controls.A5_R || controls.B5_R;
+		var K6R = _hitbox.K6.justReleased || controls.A6_R || controls.B6_R;
+		var K7R = _hitbox.K7.justReleased || controls.A7_R || controls.B7_R;
+		var K8R = _hitbox.K8.justReleased || controls.B8_R;
+		var K9R = _hitbox.K9.justReleased || controls.B9_R;
 
 		var sH = [
 			controls.A1,
@@ -4930,15 +4977,15 @@ class PlayState extends MusicBeatState
 			controls.C12_R
 		];
 
-		var upP = controls.NOTE_UP_P;
-		var rightP = controls.NOTE_RIGHT_P;
-		var downP = controls.NOTE_DOWN_P;
-		var leftP = controls.NOTE_LEFT_P;
+		var upP = _hitbox.K3.justPressed || controls.NOTE_UP_P;
+		var rightP = _hitbox.K4.justPressed || controls.NOTE_RIGHT_P;
+		var downP = _hitbox.K2.justPressed || controls.NOTE_DOWN_P;
+		var leftP = _hitbox.K1.justPressed || controls.NOTE_LEFT_P;
 
-		var upR = controls.NOTE_UP_R;
-		var rightR = controls.NOTE_RIGHT_R;
-		var downR = controls.NOTE_DOWN_R;
-		var leftR = controls.NOTE_LEFT_R;
+		var upR = _hitbox.K3.justReleased || controls.NOTE_UP_R;
+		var rightR = _hitbox.K4.justReleased || controls.NOTE_RIGHT_R;
+		var downR = _hitbox.K2.justReleased || controls.NOTE_DOWN_R;
+		var leftR = _hitbox.K1.justReleased || controls.NOTE_LEFT_R;
 
 		var controlArray:Array<Bool> = [leftP, downP, upP, rightP];
 		var controlReleaseArray:Array<Bool> = [leftR, downR, upR, rightR];
