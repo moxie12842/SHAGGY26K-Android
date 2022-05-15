@@ -12,6 +12,12 @@ import flixel.FlxSprite;
 import flixel.util.FlxColor;
 import flixel.util.FlxGradient;
 import flixel.FlxState;
+#if android
+import flixel.FlxCamera;
+import flixel.input.actions.FlxActionInput;
+import ui.FlxVirtualPad;
+import ui.Hitbox;
+#end
 
 class MusicBeatState extends FlxUIState
 {
@@ -24,6 +30,78 @@ class MusicBeatState extends FlxUIState
 
 	inline function get_controls():Controls
 		return PlayerSettings.player1.controls;
+	
+	#if android
+	var _virtualpad:FlxVirtualPad;
+	var _hitbox:Hitbox;
+
+	var trackedinputs:Array<FlxActionInput> = [];
+
+	// adding virtualpad to state
+	public function addVirtualPad(?DPad:FlxDPadMode, ?Action:FlxActionMode) {
+		_virtualpad = new FlxVirtualPad(DPad, Action);
+		_virtualpad.alpha = 0.75;
+		var padcam = new FlxCamera();
+		FlxG.cameras.add(padcam);
+		padcam.bgColor.alpha = 0;
+		_virtualpad.cameras = [padcam];
+		add(_virtualpad);
+		controls.setVirtualPad(_virtualpad, DPad, Action);
+		trackedinputs = controls.trackedinputs;
+		controls.trackedinputs = [];
+
+		#if android
+		controls.addAndroidBack();
+		#end
+	}
+
+	#if android
+	public function addHitbox(mania:Int) {
+		var curhitbox:HitboxType = DEFAULT;
+
+		switch (mania){
+			case 0:
+				curhitbox = DEFAULT;
+			case 1:
+				curhitbox = SIX;
+			case 2:
+				curhitbox = SEVEN;					
+			case 3:
+				curhitbox = NINE;	
+			case 4:
+				curhitbox = THIRTEEN;
+			case 5:
+				curhitbox = TWENTYSIX;
+			case 6:
+				curhitbox = SIXTEEN;
+			case 7:
+				curhitbox = ONE;
+			case 8:
+				curhitbox = TEN;
+			default:
+				curhitbox = DEFAULT;
+		}
+
+		_hitbox = new Hitbox(curhitbox);
+
+		var camcontrol = new flixel.FlxCamera();
+		FlxG.cameras.add(camcontrol);
+		camcontrol.bgColor.alpha = 0;
+		_hitbox.cameras = [camcontrol];
+
+		_hitbox.visible = false;
+		add(_hitbox);
+	}
+	#end
+	
+	override function destroy() {
+		controls.removeFlxInput(trackedinputs);
+
+		super.destroy();
+	}
+	#else
+	public function addVirtualPad(?DPad, ?Action){};
+	#end
 
 	override function create() {
 		#if MODS_ALLOWED
