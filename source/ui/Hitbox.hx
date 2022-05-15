@@ -162,17 +162,17 @@ class Hitbox extends FlxSpriteGroup
                 hitbox.add(add(K13 = createhitbox(588, "K13"))); 
                 hitbox.add(add(K14 = createhitbox(637, "K14"))); 
                 hitbox.add(add(K15 = createhitbox(686, "K15")));
-                hitbox.add(add(K16 = createhitbox(196, "K16"))); 
-                hitbox.add(add(K17 = createhitbox(294, "K17")));
-                hitbox.add(add(K18 = createhitbox(392, "K18"))); 
-                hitbox.add(add(K19 = createhitbox(490, "K19")));
-                hitbox.add(add(K20 = createhitbox(588, "K20")));
-                hitbox.add(add(K21 = createhitbox(686, "K21")));
-                hitbox.add(add(K22 = createhitbox(784, "K22")));
-                hitbox.add(add(K23 = createhitbox(882, "K23")));
-                hitbox.add(add(K24 = createhitbox(980, "K24"))); 
-                hitbox.add(add(K25 = createhitbox(1078, "K25")));
-                hitbox.add(add(K26 = createhitbox(1176, "K26")));  
+                hitbox.add(add(K16 = createhitbox(735, "K16"))); 
+                hitbox.add(add(K17 = createhitbox(784, "K17")));
+                hitbox.add(add(K18 = createhitbox(833, "K18"))); 
+                hitbox.add(add(K19 = createhitbox(882, "K19")));
+                hitbox.add(add(K20 = createhitbox(931, "K20")));
+                hitbox.add(add(K21 = createhitbox(980, "K21")));
+                hitbox.add(add(K22 = createhitbox(1029, "K22")));
+                hitbox.add(add(K23 = createhitbox(1078, "K23")));
+                hitbox.add(add(K24 = createhitbox(1127, "K24"))); 
+                hitbox.add(add(K25 = createhitbox(1176, "K25")));
+                hitbox.add(add(K26 = createhitbox(1225, "K26")));  
             case DEFAULT:
                 hitbox_hint.loadGraphic(Paths.image('hitbox/hitbox_hint'));
                 frameshb = Paths.getSparrowAtlas('hitbox/hitbox');
