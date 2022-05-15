@@ -1890,7 +1890,7 @@ class Controls extends FlxActionSet
 		inline forEachBound(Control.G14, (action, state) -> addbutton(action, hitbox.K15, state));
 		inline forEachBound(Control.G15, (action, state) -> addbutton(action, hitbox.K16, state));
 	case ONE:
-		inline forEachBound(Control.B5, (action, state) -> addbutton(action, hitbox.K1, state));
+		inline forEachBound(Control.B1, (action, state) -> addbutton(action, hitbox.K1, state));
 	case TEN:
 		inline forEachBound(Control.C0, (action, state) -> addbutton(action, hitbox.K1, state));
 		inline forEachBound(Control.C1, (action, state) -> addbutton(action, hitbox.K2, state));
