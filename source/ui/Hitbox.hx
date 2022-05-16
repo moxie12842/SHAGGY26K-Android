@@ -117,7 +117,7 @@ class Hitbox extends FlxSpriteGroup
                 hitbox.add(add(K6 = createhitbox(910, "K6"))); 
                 hitbox.add(add(K7 = createhitbox(1092, "K7")));
             case SIX:
-                hitbox_hint.loadGraphic(Paths.image('hitbox/6k'));
+                hitbox_hint.loadGraphic(Paths.image('hitbox/6k_hint'));
                 frameshb = Paths.getSparrowAtlas('hitbox/6k');
                 
                 hitbox.add(add(K1 = createhitbox(0, "K1"))); 
